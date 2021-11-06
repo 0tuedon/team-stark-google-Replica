@@ -1,10 +1,15 @@
-import search from '../search.svg'
-import speech from '../speech.svg'
-import side from    '../side.jpg'
-import { waitForDomChange } from '@testing-library/dom'
-const Main = ({value,word})=>
-{
-    return(
+import { useState } from "react";
+import {HiOutlineSearch} from "react-icons/hi";
+
+const Main = () => {
+    const [searchValue, setSearchValue] = useState("")
+
+    const onSearchChange = (event) => {
+        const { value } = event.target
+        setSearchValue(value)
+    }
+
+    return (
         <div id="content">
             {searchValue.trim().length < 1 ? <img id="logo" src="https://internship.sidehustle.ng/img/logo-dark.64d45129.png"
                 alt="SideHustle" /> : searchValue
