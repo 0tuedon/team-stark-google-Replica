@@ -1,8 +1,11 @@
-import search from '../search.svg'
-import speech from '../speech.svg'
-import side from    '../side.jpg'
-import { waitForDomChange } from '@testing-library/dom'
-const Main = ({value,word})=>
+import React from 'react'
+const Main = ()=>
+const [searchValue, setSearchValue] = useState("")
+
+    const onSearchChange = (event) => {
+        const { value } = event.target
+        setSearchValue(value)
+    }
 {
     return(
         <div id="content">
@@ -33,9 +36,5 @@ const Main = ({value,word})=>
                     <a href="#">Ede Yoruba</a>
                     <a href="#">Nigerian Pidgin</a>
             </div>
-        </div>
-    )
-}
-
 
 export default Main;
