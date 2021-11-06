@@ -107,7 +107,7 @@ code {
 
 #content{
   height: 233px;
-  margin-top: 120px;
+  margin-top: 60px;
   text-align: -webkit-center;
 }
 
@@ -122,7 +122,6 @@ code {
 }
 
 #voiceSearch {
-  column-count: green;
   background: url(https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png) 0 0 no-repeat;
   height: 24px;
   background-size: cover;
@@ -141,7 +140,6 @@ language section
   font-size: 13px;
 }
 
-
 .lang a:nth-child(1) {
   margin-left: 5px;
 }
@@ -153,7 +151,8 @@ language section
 }
 
 .lang a:hover {
-
+  text-decoration: underline;
+}
 
 /* Getting the footer to the bottom via the below two lines */
 #footer {
@@ -163,13 +162,39 @@ language section
   right: 0;
   width: 100%;
   font-size: 13px;
+  height: 70px;
   line-height: 40px;
-  background-color: #f2f2f2;
+  display: flex;
+  padding: 5px 10px;
+  justify-content: space-between;
+  background: #e8e8e8;
+  font-size: smaller;
   border-top: 1px solid #e4e4e4;
 }
 
+.footer-top {
+  padding: 10px;
+  border-bottom: 1px solid green;
+  height: 20px;
+}
+
+/* small screen orientation */
+@media screen and (max-width: 768px) {
+  #footer {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    text-align: center;
+  }
+
+  .footerLinks {
+    margin: 0 10px;
+  }
+}
+
 .footerLinks{
-  color: rgb(95,99,104);
+  color: green;
+  border: none;
   font-family: arial, sans-serif;
   text-decoration: none;
 }

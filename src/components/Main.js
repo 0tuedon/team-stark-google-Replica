@@ -1,26 +1,15 @@
-<<<<<<< HEAD
 import { useState } from "react";
 import {HiOutlineSearch} from "react-icons/hi";
 
 const Main = () => {
     const [searchValue, setSearchValue] = useState("")
-=======
-import React from 'react'
-const Main = ()=>
-const [searchValue, setSearchValue] = useState("")
->>>>>>> 7a946ffd68216833c2c488df3e50d0dc37c51bbe
 
     const onSearchChange = (event) => {
         const { value } = event.target
         setSearchValue(value)
     }
-<<<<<<< HEAD
 
     return (
-=======
-{
-    return(
->>>>>>> 7a946ffd68216833c2c488df3e50d0dc37c51bbe
         <div id="content">
             {searchValue.trim().length < 1 ? <img id="logo" src="https://internship.sidehustle.ng/img/logo-dark.64d45129.png"
                 alt="SideHustle" /> : searchValue
@@ -49,5 +38,7 @@ const [searchValue, setSearchValue] = useState("")
                     <a href="#">Ede Yoruba</a>
                     <a href="#">Nigerian Pidgin</a>
             </div>
-
+        </div>
+    )
+}
 export default Main;
