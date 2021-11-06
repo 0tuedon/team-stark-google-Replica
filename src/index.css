@@ -141,6 +141,7 @@ language section
   font-size: 13px;
 }
 
+
 .lang a:nth-child(1) {
   margin-left: 5px;
 }
@@ -152,8 +153,7 @@ language section
 }
 
 .lang a:hover {
-  text-decoration: underline;
-}
+
 
 /* Getting the footer to the bottom via the below two lines */
 #footer {
